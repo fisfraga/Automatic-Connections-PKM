@@ -112,9 +112,8 @@ def extract_concepts(text_df: pd.DataFrame):
 	#text_df_final.index = text_df.index
 	#text_df_final.set_index('Text_ID',drop=False,inplace=True)
 
-	datatxt = DataTXT(token="72edd43cd27b4e1799593f69b1200d26")
+	datatxt = DataTXT(token="ADD-TOKEN-HERE")
 
-	#datatxt = DataTXT(token="9b2145a04284490782de576204489924")
 
 
 	mentions_df_raw = create_mention_dataframe(text_df, datatxt)
