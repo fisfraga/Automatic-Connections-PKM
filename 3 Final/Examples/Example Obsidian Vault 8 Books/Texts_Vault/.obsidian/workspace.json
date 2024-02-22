@@ -1,0 +1,157 @@
+{
+  "main": {
+    "id": "92721ca9d3def165",
+    "type": "split",
+    "children": [
+      {
+        "id": "eaa1d85073c5130b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "643bf2bffec840c8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Concepts/Experience.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2ad5b62bb20bd1ac",
+    "type": "split",
+    "children": [
+      {
+        "id": "8a5f12f8e0944558",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f989c824323aaff1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1e30121744da28f5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ab2b2f1a73a7b734",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "d63196f71e6b0962",
+    "type": "split",
+    "children": [
+      {
+        "id": "7064cc86ed454e92",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e4ea33f00b92ccce",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Concepts/Experience.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b2e4718975df934e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Concepts/Experience.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "205756259e6248f3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ce0fd7f89eaa73cb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Concepts/Experience.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "643bf2bffec840c8",
+  "lastOpenFiles": [
+    "Concepts/Knowledge.md",
+    "Concepts/Discipline.md",
+    "Concepts/Self-Control.md",
+    "Texts/How to Take Smart Notes Note 6.md",
+    "Books/How to Take Smart Notes.md"
+  ]
+}

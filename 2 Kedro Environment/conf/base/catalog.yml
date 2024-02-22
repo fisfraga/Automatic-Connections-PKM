@@ -1,0 +1,233 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://kedro.readthedocs.io/en/stable/data/data_catalog.html
+
+
+
+#INPUTS
+
+text_df:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/text_df.csv
+  load_args:
+    sep: ','
+    index_col: 0
+  save_args:
+    decimal: .
+
+sentence_transformer_model_list:
+  type: json.JSONDataSet
+  filepath: data/01_raw/sentence_transformer_model_list.json
+
+
+conceptnet_relations_list:
+  type: json.JSONDataSet
+  filepath: data/01_raw/conceptnet_relations_list.json
+
+
+concepts_data_list_prev:
+  type: json.JSONDataSet
+  filepath: data/01_raw/concepts_data_list_prev.json
+
+concepts_data_list:
+  type: json.JSONDataSet
+  filepath: data/04_feature/concepts_data_list.json
+
+
+conceptnet_distances_dict_prev:
+  type: json.JSONDataSet
+  filepath: data/01_raw/conceptnet_distances_dict_prev.json
+
+conceptnet_relations_dict_prev:
+  type: json.JSONDataSet
+  filepath: data/01_raw/conceptnet_relations_dict_prev.json
+
+
+#mentions_df section
+
+mentions_df_raw:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/mentions_df_raw.csv
+  load_args:
+    sep: ','
+    index_col: 
+  save_args:
+    decimal: .
+
+
+mentions_df_filtered_type:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/mentions_df_filtered_type.csv
+  load_args:
+    sep: ','
+    index_col: 
+  save_args:
+    decimal: .
+
+mentions_df_filtered_confidence:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/mentions_df_filtered_confidence.csv
+  load_args:
+    sep: ','
+    index_col: 
+  save_args:
+    decimal: .
+
+mentions_df_enhanced:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/mentions_df_enhanced.csv
+  load_args:
+    sep: ','
+    index_col: 
+  save_args:
+    decimal: .
+
+mentions_df_filtered_multiple_occurrences:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/mentions_df_filtered_multiple_occurrences.csv
+  load_args:
+    sep: ','
+    index_col: 
+  save_args:
+    decimal: .
+
+#final mentions_df in model inputs
+
+mentions_df_filtered_conceptnet:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/mentions_df_filtered_conceptnet.csv
+  load_args:
+    sep: ','
+    index_col:
+  save_args:
+    decimal: .
+
+
+
+
+
+
+concepts_list:
+  type: json.JSONDataSet
+  filepath: data/03_primary/concepts_list.json
+
+
+
+dbpedia_to_conceptnet_prev:
+  type: json.JSONDataSet
+  filepath: data/01_raw/dbpedia_to_conceptnet_prev.json
+
+conceptnet_to_dbpedia_prev:
+  type: json.JSONDataSet
+  filepath: data/01_raw/conceptnet_to_dbpedia_prev.json
+
+
+
+dbpedia_to_conceptnet:
+  type: json.JSONDataSet
+  filepath: data/05_model_input/dbpedia_to_conceptnet.json
+
+conceptnet_to_dbpedia:
+  type: json.JSONDataSet
+  filepath: data/05_model_input/conceptnet_to_dbpedia.json
+
+
+
+#for querying and reloading
+
+
+
+concepts_data_list:
+  type: json.JSONDataSet
+  filepath: data/03_primary/concepts_data_list.json
+
+
+
+
+
+#concepts databases
+
+concepts_database:
+  type: pandas.CSVDataSet
+  filepath: data/03_primary/concepts_database.csv
+  load_args:
+    sep: ','
+    index_col:
+  save_args:
+    decimal: .
+
+
+
+
+
+conceptnet_distances_dict:
+  type: json.JSONDataSet
+  filepath: data/04_feature/conceptnet_distances_dict.json
+
+
+
+conceptnet_relations_dict:
+  type: json.JSONDataSet
+  filepath: data/04_feature/conceptnet_relations_dict.json
+
+
+
+#with dicts from conceptnet
+
+concepts_database_enhanced:
+  type: pandas.CSVDataSet
+  filepath: data/05_model_input/concepts_database_enhanced.csv
+  load_args:
+    sep: ','
+    index_col:
+  save_args:
+    decimal: .
+
+
+
+
+
+#inputs for generating KB
+
+
+
+text_df_final:
+  type: pandas.CSVDataSet
+  filepath: data/05_model_input/text_df_final.csv
+  load_args:
+    sep: ','
+    index_col:
+  save_args:
+    index: True
+    decimal: .
+
+mentions_df_final:
+  type: pandas.CSVDataSet
+  filepath: data/05_model_input/mentions_df_final.csv
+  load_args:
+    sep: ','
+    index_col: 0
+  save_args:
+    decimal: .
+
+
+concepts_list_final:
+  type: json.JSONDataSet
+  filepath: data/05_model_input/concepts_list_final.json
+
+
+relatedness_df:
+  type: pandas.CSVDataSet
+  filepath: data/05_model_input/relatedness_df.csv
+  load_args:
+    sep: ','
+    index_col: 0
+  save_args:
+    decimal: .
+
+
+# model_outputs will have Markdown files   → → or maybe inside the kb_building folder...
+
+
+
